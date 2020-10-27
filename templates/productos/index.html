@@ -1,0 +1,12 @@
+<h1>Productos en oferta</h1>
+<form action="">
+    <input type="text" placeholder="Busque el producto que quiera">
+</form>
+
+{% for producto in productos %}
+    {{ producto.nombre }}
+    {{ producto.precio }}
+    {{ producto.cantidad }}
+{% endfor %}
+
+
